@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("My first streamlit")  #para poner el titulo cuando se corra (es como la salida de RStudio )
 
-options = ["Piedra","Papel","Tijera"] #se hizo una lista []
+options = ["Rock","Paper","Scissors"] #se hizo una lista []
 user = st.selectbox("Select one option: ",options) #.selectbox sirve para q la salida sea una cajita con opciones
 
 
@@ -15,26 +15,28 @@ st.write("Computer selection: ", computer) #print("Computer = ",computer)
 
 
 if user == computer:
-    st.header("Empate 😑")
-elif user == "Piedra" and computer == "Tijera":
-    st.header("Gana User😊")
-elif user == "Tijera" and computer == "Piedra":
-    st.header("Gana Computer😒")  
+    st.header("Tie 😑")
+elif user == "Rock" and computer == "Scissors":
+    st.header("User win😊")
+elif user == "Scissors" and computer == "Rock":
+    st.header(" Computer win😒")  
 
 ##Otra forma de hacerlo del profe
-elif user =="Papel":
-    if computer =="Tijera":
-        st.header("Gana Computer😒")
+elif user =="Paper":
+    if computer =="Scissors":
+        st.header("Computer win😒")
     else:
-        if computer == "Piedra":
-            st.header("Gana User😊")
+        if computer == "Rock":
+            st.header(" User Win😊")
 
 ## Mi forma
-elif user == "Tijera" and computer == "Papel":
-    st.header("Gana User😊")
-elif user == "Piedra" and computer == "Papel":
-    st.header("Gana Computer😒")
+elif user == "Scissors" and computer == "Paper":
+    st.header(" User win😊")
+elif user == "Rock" and computer == "Paper":
+    st.header(" Computer win😒")
 
+
+#st.markdown("[Link to my first web page] (http://www.myfirstwebpageEstefania.com)")
 
 # para atualizar pip -->   python -m pip install --upgrade pip   copiar y pegarlo en Cmder
 
