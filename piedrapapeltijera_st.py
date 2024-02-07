@@ -1,7 +1,7 @@
 import random
 import streamlit as st
 
-st.title("My first streamlit")  #para poner el titulo cuando se corra (es como la salida de RStudio )
+st.title("My first streamlit Estefania´s App")  #para poner el titulo cuando se corra (es como la salida de RStudio )
 
 options = ["Rock","Paper","Scissors"] #se hizo una lista []
 user = st.selectbox("Select one option: ",options) #.selectbox sirve para q la salida sea una cajita con opciones
